@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 24% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 24% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 24% 16%;
+
+    --primary: 210 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 76% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 33 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 85% 45%;
+
+    --radius: 0.75rem;
+
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(210 85% 45%) 0%, hsl(180 85% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    
+    --shadow-sm: 0 2px 8px hsl(210 40% 20% / 0.05);
+    --shadow-md: 0 4px 16px hsl(210 40% 20% / 0.08);
+    --shadow-lg: 0 8px 32px hsl(210 40% 20% / 0.12);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 210 24% 16%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 24% 20%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 24% 20%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 76% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 24% 24%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 33 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 24% 24%;
+    --input: 210 24% 24%;
+    --ring: 210 85% 55%;
+
+    --success: 142 76% 50%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
